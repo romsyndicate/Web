@@ -46,3 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+// Exemplo de como adicionar ao final do conteúdo atual
+const conteudoRedes = `
+    <div class="redes-sociais" style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+        <a href="https://github.com/bruninho182" target="_blank" style="color: white; text-decoration: none;">
+            <i class="fa-brands fa-github" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://discord.gg/ndfKxHRE" target="_blank" style="color: white; text-decoration: none;">
+            <i class="fa-brands fa-discord" style="font-size: 24px;"></i>
+        </a>
+    </div>
+`;
+
+// Onde você define o final da página, você apenas concatena (soma):
+app.innerHTML += conteudoRedes;
