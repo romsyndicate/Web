@@ -1,62 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const progressBars = document.querySelectorAll('.progresso-bar');
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.site-menu');
 
-    // Define um pequeno delay para a animação começar após o carregamento
-    setTimeout(() => {
-        progressBars.forEach(bar => {
-            // Obtém a percentagem que definiste no HTML (estilo inline)
-            const targetWidth = bar.style.width;
-            
-            // Começa a barra do zero e depois anima até o alvo
-            bar.style.width = '0%';
-            
-            // Força um reflow para o browser perceber a mudança
-            bar.getBoundingClientRect();
-            
-            // Define a largura final com uma transição suave
-            bar.style.transition = 'width 1.5s cubic-bezier(0.1, 0.5, 0.5, 1)';
-            bar.style.width = targetWidth;
+    if (menuButton && menu) {
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Abrir menu' : 'Fechar menu');
+            menu.classList.toggle('open', !isOpen);
+            menuButton.innerHTML = `<i class="fa-solid fa-${isOpen ? 'bars' : 'xmark'}"></i>`;
         });
-    }, 300);
-});
 
-// Espera o documento carregar
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("imgExpanded");
-    const closeBtn = document.querySelector(".close");
-
-    // Seleciona todas as imagens da galeria
-    const images = document.querySelectorAll(".galeria img");
-
-    images.forEach(img => {
-        img.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-    });
-
-    // Fechar ao clicar no X
-    closeBtn.onclick = () => modal.style.display = "none";
-
-    // Fechar ao clicar fora da imagem
-    window.onclick = (event) => {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+            menu.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Abrir menu');
+            menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }));
     }
-});
-// Exemplo de como adicionar ao final do conteúdo atual
-const conteudoRedes = `
-    <div class="redes-sociais" style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
-        <a href="https://github.com/bruninho182" target="_blank" style="color: white; text-decoration: none;">
-            <i class="fa-brands fa-github" style="font-size: 24px;"></i>
-        </a>
-        <a href="https://discord.gg/ndfKxHRE" target="_blank" style="color: white; text-decoration: none;">
-            <i class="fa-brands fa-discord" style="font-size: 24px;"></i>
-        </a>
-    </div>
-`;
 
-// Onde você define o final da página, você apenas concatena (soma):
-app.innerHTML += conteudoRedes;
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const projects = document.querySelectorAll('.project-card');
+    filterButtons.forEach(button => button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        filterButtons.forEach(item => {
+            const selected = item === button;
+            item.classList.toggle('selected', selected);
+            item.setAttribute('aria-pressed', String(selected));
+        });
+        projects.forEach(project => {
+            project.hidden = filter !== 'all' && project.dataset.status !== filter;
+        });
+    }));
+});
