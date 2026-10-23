@@ -1,27 +1,40 @@
-🎮 ROM SYNDICATE - Hub de Traduções
-A ROM SYNDICATE é uma plataforma dedicada à preservação e tradução de jogos clássicos (Retro-Gaming), com foco especial em títulos de GBA e PS1. O site funciona como uma SPA (Single Page Application) moderna, consumindo dados dinâmicos de um arquivo JSON.
+# ROM SYNDICATE — Traduções de fã para fã
 
-🚀 Tecnologias Utilizadas
-Este projeto foi construído "raiz", sem frameworks pesados como React ou Vue, focando em performance e simplicidade:
+Site da equipe ROM SYNDICATE para divulgar e preservar traduções de jogos clássicos.
 
-HTML5 & CSS3: Estrutura e estilização moderna com variáveis CSS e animações de fade-in.
+## Tecnologias
 
-JavaScript (ES6+): Lógica de roteamento dinâmico e manipulação de DOM.
+- React para construir a interface em componentes reutilizáveis.
+- Vite para desenvolvimento local e build de produção.
+- CSS responsivo para desktop e celular.
 
-Vite: Ferramenta de build ultra-rápida para desenvolvimento frontend.
+## Executar localmente
 
-JSON: Utilizado como um "banco de dados" local para gerenciar projetos e membros da equipe.
+Requer Node.js 20.19+ ou 22.12+.
 
-✨ Funcionalidades
-[x] Navegação SPA: Troca de páginas instantânea (Home, Sobre, Detalhes) sem recarregar o navegador.
+```bash
+npm install
+npm run dev
+```
 
-[x] Grid Dinâmico: As capas dos jogos adaptam-se automaticamente às proporções de GBA e PS1.
+O Vite mostrará o endereço local para abrir no navegador.
 
-[x] Sistema de Novidades: Exibição automática dos últimos 3 projetos atualizados.
+## Gerar versão de produção
 
-[x] Páginas de Projeto: Detalhes técnicos, progresso individual (Textos/Gráficos), ferramentas e instruções de aplicação de patch.
+```bash
+npm run build
+npm run preview
+```
 
-[x] Área da Equipe: Cards personalizados com bio e links sociais dos tradutores.
+Os arquivos prontos para publicação são gerados em `dist/`.
 
-🤝 Créditos
-Desenvolvido por PuNK (Bruno Ferreira). Agradecimentos especiais à comunidade de ROMhacking brasileira por manter a chama dos clássicos acesa.
+## Organização
+
+- `src/components/`: navegação e rodapé compartilhados.
+- `src/pages/`: página inicial, equipe e detalhes de projetos.
+- `src/data/projects.js`: catálogo central de traduções, progresso, imagens e arquivos disponíveis.
+- `assets/`: capas, capturas de tela, arquivos de tradução e imagens da equipe.
+- `assets/Projetos/*.html`: entradas React que preservam os endereços usados pelos detalhes dos projetos.
+- `vite.config.js`: configuração multipágina e cópia dos assets existentes para o build.
+
+Os detalhes dos jogos reutilizam um único componente React e recebem seus dados pelo identificador presente no endereço. Os endereços existentes, como `/assets/Projetos/thps3gba.html`, continuam disponíveis no site publicado.

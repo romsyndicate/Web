@@ -1,85 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#10110f">
-    <meta name="description" content="Traduções feitas de fã para fã. Conheça os projetos da ROM SYNDICATE e jogue clássicos em português.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10110f" />
+    <meta name="description" content="Traduções feitas de fã para fã. Conheça os projetos da ROM SYNDICATE e jogue clássicos em português." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>ROM SYNDICATE — Traduções de fã para fã</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="site-header">
-        <nav class="nav-wrap" aria-label="Navegação principal">
-            <a class="brand" href="index.html" aria-label="ROM SYNDICATE — início">
-                <img src="assets/img/logo/logo-mini.png" alt="">
-                <span>ROM <b>SYNDICATE</b><small>TRADUÇÕES DE FÃ PARA FÃ</small></span>
-            </a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
-            <ul id="site-menu" class="site-menu">
-                <li><a class="active" href="index.html">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="sobre.html">A equipe</a></li>
-                <li><a href="https://github.com/ROM-SYNDICATE" target="_blank" rel="noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-grid"></div>
-            <div class="hero-inner">
-                <div class="hero-copy">
-                    <p class="eyebrow"><span class="status-dot"></span> PRESERVANDO CLÁSSICOS, UM PIXEL DE CADA VEZ</p>
-                    <h1>Grandes jogos.<br><span>Novas palavras.</span></h1>
-                    <p class="hero-lede">A gente acredita que uma boa história merece ser entendida. Traduzimos clássicos dos videogames com cuidado, respeito e paixão.</p>
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#projetos">Explorar projetos <i class="fa-solid fa-arrow-down"></i></a>
-                        <a class="button button-quiet" href="sobre.html">Conheça a equipe <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <div class="hero-meta"><span><i class="fa-solid fa-gamepad"></i> GBA · GBC · PS1</span><span><i class="fa-solid fa-heart"></i> Feito por fãs</span></div>
-                </div>
-                <div class="hero-art" aria-label="Capa do projeto Tony Hawk's Pro Skater 3 para Game Boy Advance">
-                    <div class="art-frame"><img src="assets/img/Thps3gba/capa.jpg" alt="Capa da tradução de Tony Hawk's Pro Skater 3"><span class="art-tag"><i class="fa-solid fa-star"></i> DESTAQUE</span></div>
-                    <div class="art-caption"><span>PROJETO EM DESTAQUE</span><strong>Tony Hawk’s Pro Skater 3</strong><small>GAME BOY ADVANCE <i class="fa-solid fa-circle-check"></i> 100% TRADUZIDO</small></div>
-                    <span class="pixel-cross cross-one">✳</span><span class="pixel-cross cross-two">✳</span>
-                </div>
-            </div>
-            <div class="hero-bottom"><span>INSERINDO MEMÓRIAS NO CARTUCHO...</span><span>▼</span><span>SCROLL PARA CONTINUAR</span></div>
-        </section>
-
-        <section class="projects-section" id="projetos">
-            <div class="section-heading">
-                <div><p class="eyebrow">NOSSO ACERVO <span class="heading-line"></span></p><h2>Projetos <span>em cartaz</span></h2><p class="section-intro">Traduções feitas com carinho para você revisitar seus jogos favoritos.</p></div>
-                <div class="project-count"><strong>07</strong><span>JOGOS<br>NO ACERVO</span></div>
-            </div>
-            <div class="filters" role="group" aria-label="Filtrar projetos">
-                <button class="filter-button selected" type="button" data-filter="all" aria-pressed="true">Todos <span>07</span></button>
-                <button class="filter-button" type="button" data-filter="done" aria-pressed="false">Disponíveis</button>
-                <button class="filter-button" type="button" data-filter="progress" aria-pressed="false">Em andamento</button>
-                <button class="filter-button" type="button" data-filter="paused" aria-pressed="false">Pausados</button>
-            </div>
-
-            <div class="project-grid">
-                <article class="project-card" data-status="done"><a class="cover-link" href="assets/Projetos/thps3gba.html" aria-label="Ver detalhes de Tony Hawk's Pro Skater 3"><img src="assets/img/Thps3gba/capa.jpg" alt="Capa de Tony Hawk's Pro Skater 3" loading="lazy"><span class="status-pill done"><i></i> Disponível</span></a><div class="project-info"><p class="platform-label">GBA <span>·</span> 2002</p><h3>Tony Hawk’s Pro Skater 3</h3><div class="progress-label"><span>Tradução concluída</span><b>100%</b></div><div class="progress-track"><span style="--progress:100%"></span></div><a class="project-link" href="assets/Projetos/thps3gba.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-                <article class="project-card" data-status="done"><a class="cover-link" href="assets/Projetos/turokdinogb.html" aria-label="Ver detalhes de Turok"><img src="assets/img/turokdinogb/caa.jpg" alt="Capa de Turok: Battle of the Bionosaurs" loading="lazy"><span class="status-pill done"><i></i> Disponível</span></a><div class="project-info"><p class="platform-label">GAME BOY / COLOR</p><h3>Turok: Battle of the Bionosaurs</h3><div class="progress-label"><span>Tradução concluída</span><b>100%</b></div><div class="progress-track"><span style="--progress:100%"></span></div><a class="project-link" href="assets/Projetos/turokdinogb.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-                <article class="project-card" data-status="done"><a class="cover-link" href="assets/Projetos/turok2gbc.html" aria-label="Ver detalhes de Turok 2"><img src="assets/img/turok2gbc/capa.jpg" alt="Capa de Turok 2: Seeds of Evil" loading="lazy"><span class="status-pill done"><i></i> Disponível</span></a><div class="project-info"><p class="platform-label">GAME BOY COLOR</p><h3>Turok 2: Seeds of Evil</h3><div class="progress-label"><span>Tradução concluída</span><b>100%</b></div><div class="progress-track"><span style="--progress:100%"></span></div><a class="project-link" href="assets/Projetos/turok2gbc.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-                <article class="project-card" data-status="progress"><a class="cover-link" href="assets/Projetos/driverGBC.html" aria-label="Ver detalhes de Driver"><img src="assets/img/driverGBC/capa.jpg" alt="Capa de Driver" loading="lazy"><span class="status-pill progress"><i></i> Em andamento</span></a><div class="project-info"><p class="platform-label">GAME BOY COLOR</p><h3>Driver</h3><div class="progress-label"><span>Progresso geral</span><b>85%</b></div><div class="progress-track"><span style="--progress:85%"></span></div><a class="project-link" href="assets/Projetos/driverGBC.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-                <article class="project-card" data-status="progress"><a class="cover-link" href="assets/Projetos/thugGBA.html" aria-label="Ver detalhes de Tony Hawk's Underground"><img src="assets/img/thugGBA/capa.jpg" alt="Capa de Tony Hawk's Underground" loading="lazy"><span class="status-pill progress"><i></i> Em andamento</span></a><div class="project-info"><p class="platform-label">GBA <span>·</span> 2003</p><h3>Tony Hawk’s Underground</h3><div class="progress-label"><span>Progresso geral</span><b>45%</b></div><div class="progress-track"><span style="--progress:45%"></span></div><a class="project-link" href="assets/Projetos/thugGBA.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-                <article class="project-card" data-status="paused"><a class="cover-link" href="assets/Projetos/initialdPSX.html" aria-label="Ver detalhes de Initial D"><img src="assets/img/initialDPSX/CAPA.jpg" alt="Capa de Initial D" loading="lazy"><span class="status-pill paused"><i></i> Pausado</span></a><div class="project-info"><p class="platform-label">PLAYSTATION</p><h3>Initial D</h3><div class="progress-label"><span>Progresso geral</span><b>10%</b></div><div class="progress-track"><span style="--progress:10%"></span></div><a class="project-link" href="assets/Projetos/initialdPSX.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-                <article class="project-card" data-status="paused"><a class="cover-link" href="assets/Projetos/thps2.html" aria-label="Ver detalhes de Tony Hawk's Pro Skater 2"><img src="assets/img/thps2/CAPA.jpg" alt="Capa de Tony Hawk's Pro Skater 2" loading="lazy"><span class="status-pill paused"><i></i> Pausado</span></a><div class="project-info"><p class="platform-label">PLAYSTATION</p><h3>Tony Hawk’s Pro Skater 2</h3><div class="progress-label"><span>Progresso geral</span><b>0%</b></div><div class="progress-track"><span style="--progress:0%"></span></div><a class="project-link" href="assets/Projetos/thps2.html">Ver projeto <i class="fa-solid fa-arrow-right"></i></a></div></article>
-            </div>
-        </section>
-
-        <section class="community-band"><div class="community-mark"><i class="fa-solid fa-gamepad"></i></div><div><p class="eyebrow">A COMUNIDADE FAZ PARTE</p><h2>Curte retrô? <span>Chega junto.</span></h2><p>Troque ideia, acompanhe os projetos e ajude a manter esses clássicos vivos.</p></div><a class="button button-primary" href="https://discord.com/invite/j9WG5ceJ" target="_blank" rel="noreferrer">Entrar no Discord <i class="fa-brands fa-discord"></i></a></section>
-    </main>
-
-    <footer class="site-footer"><a class="footer-brand" href="index.html">ROM <b>SYNDICATE</b></a><p>Feito por fãs, para fãs. A nostalgia também fala português.</p><div class="footer-social"><a href="https://github.com/ROM-SYNDICATE" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://discord.com/invite/j9WG5ceJ" target="_blank" rel="noreferrer" aria-label="Discord"><i class="fa-brands fa-discord"></i></a></div><small>© 2025 ROM SYNDICATE <span>·</span> TODOS OS DIREITOS DOS JOGOS PERTENCEM AOS SEUS CRIADORES</small></footer>
-    <script src="script.js"></script>
-</body>
+  </head>
+  <body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body>
 </html>
