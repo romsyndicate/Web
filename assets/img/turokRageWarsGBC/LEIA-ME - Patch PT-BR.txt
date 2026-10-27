@@ -1,0 +1,24 @@
+TRADUCAO PT-BR — TUROK: RAGE WARS (GAME BOY COLOR)
+
+Versao: 1.0
+Autor: PuNK (Bruno Ferreira)
+Grupo/Site: RomSyndicate
+
+Credito inserido no encerramento do jogo:
+TRADUZIDO POR PUNK
+(BRUNO FERREIRA)
+
+ROM compativel
+- Turok - Rage Wars (USA, Europe) (En,Fr,De,Es).gbc
+- Tamanho: 1,048,576 bytes
+- SHA-256: 0E82076895F9AA7F8B787D5C76A33D72394F611BD0AC93ECD550873B7CE21B60
+
+Aplicacao
+1. Use sua propria copia da ROM original compativel listada acima.
+2. Abra um aplicador de patches BPS, como Floating IPS (flips).
+3. Selecione “Turok Rage Wars GBC PT-BR - Patch 1.0.bps” e aplique-o na ROM original.
+4. Salve o arquivo traduzido com outro nome e abra-o no emulador.
+
+O patch nao inclui a ROM original. A traducao usa caracteres sem acentos porque nao foi confirmado suporte a glifos acentuados na fonte do jogo.
+
+SHA-256 da ROM traduzida de referencia: A865AD79D9F5D9A36E79E16CCD3F40AB1A0EE356BE62DBE9065A4F45229D6A99
