@@ -28,7 +28,7 @@ export default defineConfig({
         resolve(root, 'sobre.html'),
         ...[
           'driverGBC', 'initialdPSX', 'rainbowSixGBC', 'thps2', 'thps3gba',
-          'thugGBA', 'turok2gbc', 'turok3gbc', 'turokRageWarsGBC', 'turokdinogb',
+          'thugGBA', 'turok2gbc', 'turok3gbc', 'turokRageWarsGBC', 'turokEvolutionGBA', 'turokdinogb',
         ].map((page) => resolve(root, `assets/Projetos/${page}.html`)),
       ],
     },

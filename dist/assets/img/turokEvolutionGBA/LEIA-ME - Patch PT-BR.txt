@@ -1,0 +1,8 @@
+TUROK: EVOLUTION (GBA) — PATCH PT-BR 1.0
+
+ROM compatível: Turok - Evolution (USA).gba
+Tamanho da ROM: 8 MiB
+
+Aplicação: use o Floating IPS (Flips), escolha Apply Patch e selecione este arquivo IPS e sua cópia original compatível do jogo.
+
+Este pacote distribui somente o patch de tradução. A ROM original não está incluída.
